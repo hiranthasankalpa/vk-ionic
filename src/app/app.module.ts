@@ -10,6 +10,8 @@ import {Video} from "../pages/video/video";
 import {Resources} from "../pages/resources/resources";
 import {Audio} from "../pages/audio/audio";
 import {About} from "../pages/about/about";
+import {VideoPlayer} from "../pages/video-player/video-player";
+import {AudioPlayer} from "../pages/audio-player/audio-player";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {About} from "../pages/about/about";
     Video,
     Resources,
     Audio,
-    About
+    About,
+    VideoPlayer,
+    AudioPlayer
   ],
   imports: [
     BrowserModule,
@@ -31,7 +35,9 @@ import {About} from "../pages/about/about";
     Video,
     Resources,
     Audio,
-    About
+    About,
+    VideoPlayer,
+    AudioPlayer
   ],
   providers: [
     StatusBar,
