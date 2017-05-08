@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Vishva Kirana</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <audio id="player">
+    <source id="source" [src]=currentVideoSource />
+  </audio>
+  <img src="../../assets/img/player_image.png">
+  <div class="atBottom">
+    <h3 class="itemName">{{selectedItem.name}}</h3>
+    <div class="times">
+      <div id="curTime"></div>
+      <div id="remTime"></div>
+    </div>
+    <div class="progressBarWrapper">
+      <div id="progressBar"><span id="progress"></span></div>
+    </div>
+    <div  class="audioControls">
+      <button (click)="rewind()" ion-button color="white" full>
+        <img src="../../assets/img/rewind.png">
+      </button>
+      <button (click)="play()" ion-button color="white" full>
+        <img src="../../assets/img/play.png">
+      </button>
+      <button (click)="pause()" ion-button color="white" full>
+        <img src="../../assets/img/pause.png">
+      </button>
+      <button (click)="forward()" ion-button color="white" full>
+        <img src="../../assets/img/forward.png">
+      </button>
+    </div>
+  </div>
+</ion-content>
